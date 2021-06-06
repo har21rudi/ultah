@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+  <!-- style CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- font google-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="h-100 text-center">
+  <div class="id">
+    <h1 class="display-3 wa text-danger fw-bold mb-5"></h1>
+    <a type="button" href="https://wa.me/message/EG5GQSBXEK35K1" class="btn mb-5 tombol btn-primary">Click Here</a>
+  </div>
+
+  <div class="container rudi">
+    <div class="row yusni">
+      <div class="col-md-8">
+        <h1 class="display-1 sayang nian fw-bold">H<span class="text-danger">a</span><span
+            class="text-white">p</span><span class="text-warning">p</span><span class="text-danger">y</span>
+          <span class="text-success">b</span><span class="text-primary">i</span><span class="text-danger">r</span><span
+            class="text-light">t</span><span class="text-info">h</span><span class="text-secondary">d</span><span
+            class="text-warning">a</span><span class="text-primary">y</span>
+        </h1>
+      </div>
+    </div>
+    <div class="row yusni">
+      <div class="col-md-8">
+        <h2 class="display-3 yusniii fw-bolder text-danger">Yuni Sri Murni</h2>
+      </div>
+    </div>
+    <div class="row justify-content-sm-end dd">
+      <div class="col-md-8">
+        <img src="img/Ultah_Yusni.png" width="80%" class="gambar" alt="ultah">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 yusniultah">
+        <p class="lead fs-3 text-white fst-italic"></p>
+      </div>
+    </div>
+  </div>
+
+  <!--laman audio-->
+  <audio id="Audio" src="ultahmusic.mp3"></audio>
+
+  <div id="box">
+    <div class="id">
+      <h1 class="display-1 home text-center text-primary fw-bold">Welcome to My Website</h1>
+      <a onClick="togglePlay()"><button type="button" class="btn mb-5">Click Here</button></a>
+    </div>
+  </div>
+  <!--akhir laman audio-->
+
+  <!--footer-->
+  <footer class="mt-auto fixed-bottom mb-2">
+    <p class="text-danger">&copy; Created By Rhscout</p>
+  </footer>
+  <!--akhir footer-->
+
+  <!--ScripJava-->
+  <script type="text/javascript">
+    var myAudio = document.getElementById("Audio");
+    var isPlaying = false;
+    function togglePlay() {
+      myAudio.play();
+      terakhir = document.querySelector('#box');
+      terakhir.classList.add('hide');
+    };
+  </script>
+  <!--akhir ScripJava-->
+
+  <!--animation-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+
+  <script>
+    gsap.registerPlugin(TextPlugin);
+    gsap.to(".home", { duration: 2, text: "By RhScout", delay: 2 });
+    gsap.from(".sayang", { duration: 8, rotationY: 360, y: -200, opacity: 0, delay: 2 });
+    gsap.from('.display-3', { duration: 9, x: -100, opacity: 0, delay: 6, ease: "back" });
+    gsap.from('.gambar', { duration: 7, rotationY: 360, x: 100, opacity: 0, scale: 0.5, delay: 8, ease: "bounce" });
+    gsap.to('.lead', { duration: 30, delay: 9.5, text: 'Happy birthday to someone awesome, humble, beautiful, dan bring unexpected blessing and endless joy to you, now and forevermore.' });
+    gsap.to(".nian", { duration: 8, rotationX: 360, y: -200, opacity: 0, delay: 18 });
+    gsap.to(".yusniii", { duration: 2, text: "06 Juni 1998", delay: 21 });
+    gsap.from(".nian", { duration: 8, rotationX: 360, y: -200, opacity: 0, delay: 18 });
+    gsap.to('.gambar', { duration: 7, rotationX: 360, opacity: 0, scale: 0.5, delay: 20 });
+    gsap.from('.gambar', { duration: 7, rotationX: 360, opacity: 0, scale: 0.5, delay: 20 });
+    gsap.to(".nian", { duration: 8, rotationY: 360, y: -200, opacity: 0, delay: 28 });
+    gsap.from(".nian", { duration: 8, rotationY: 360, y: -200, opacity: 0, delay: 28 });
+    gsap.to(".yusniii", { duration: 2, text: "Yusni", delay: 30 });
+    gsap.to('.gambar', { duration: 7, rotationY: 360, opacity: 0, scale: 0.5, delay: 30 });
+    gsap.from('.gambar', { duration: 7, rotationY: 360, opacity: 0, scale: 0.5, delay: 30 });
+    gsap.to(".nian", { duration: 8, rotationY: 360, y: -200, opacity: 0, delay: 38 });
+    gsap.from(".nian", { duration: 8, rotationY: 360, y: -200, opacity: 0, delay: 38 });
+    gsap.to(".yusniii", { duration: 2, text: "Yuni Sri Murni", delay: 40 });
+    gsap.to('.gambar', { duration: 7, rotationX: 360, opacity: 0, scale: 0.5, delay: 40 });
+    gsap.from('.gambar', { duration: 7, rotationX: 360, opacity: 0, scale: 0.5, delay: 40 });
+    gsap.to('.lead', { duration: 30, delay: 42, text: 'Happy birthday to someone awesome, humble, beautiful, dan bring unexpected blessing and endless joy to you, now and forevermore.' });
+    gsap.to(".nian", { duration: 8, rotationX: 360, y: -200, opacity: 0, delay: 48 });
+    gsap.from(".nian", { duration: 8, rotationX: 360, y: -200, opacity: 0, delay: 48 });
+    gsap.to('.display-3', { duration: 9, x: -100, opacity: 0, delay: 49, ease: "back" });
+    gsap.from('.display-3', { duration: 9, x: -100, opacity: 0, delay: 49, ease: "back" });
+    gsap.to('.gambar', { duration: 7, rotationY: 360, opacity: 0, scale: 0.5, delay: 53 });
+    gsap.from('.gambar', { duration: 7, rotationY: 360, opacity: 0, scale: 0.5, delay: 53 });
+    gsap.to(".yusniii", { duration: 2, text: "06 Juni 2021", delay: 56 });
+    gsap.to(".nian", { duration: 8, rotationY: 360, y: -200, opacity: 0, delay: 57 });
+    gsap.from(".nian", { duration: 8, rotationY: 360, y: -200, opacity: 0, delay: 57 });
+    gsap.to('.gambar', { duration: 7, rotationX: 360, opacity: 0, scale: 0.5, delay: 63 });
+    gsap.from('.gambar', { duration: 7, rotationX: 360, opacity: 0, scale: 0.5, delay: 63 });
+    gsap.to(".nian", { duration: 8, rotationY: 360, y: -200, opacity: 0, delay: 65 });
+    gsap.to(".yusniii", { duration: 8, rotationY: 360, y: -200, opacity: 0, delay: 65 });
+    gsap.to('.gambar', { duration: 7, rotationX: 360, opacity: 0, scale: 0.5, delay: 68 });
+    gsap.to('.lead', { duration: 7, rotationX: 360, opacity: 0, scale: 0.5, delay: 68 });
+
+    gsap.to(".wa", { duration: 2, text: "Terimakasih Klik untuk Menghubungi Rhscout", delay: 70 });
+    gsap.from('.tombol', { duration: 7, rotationX: 360, opacity: 0, scale: 0.5, delay: 70 });
+
+  </script>
+  <!--akhir animation-->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
